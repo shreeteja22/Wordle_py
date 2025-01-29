@@ -2,18 +2,19 @@ import random
 
 def rules():
     print("\n")
-    print("----------------------------------------------")
+    print("---------------------------------------------------------------------")
     print("The rules are simple: ")
     print("A. You have to guess a 5-letter word.")
     print("B. You have 6 chances to guess the word.")
     print("C. After each guess, you will be given hints.")
     print("D. The hints are: ")
-    print("🟨 - Letter is present in the word but at a different position.")
-    print("🟩 - Letter is present in the word and at the correct position.")
-    print("🟥 - Letter is not present in the word.")
+    print("     🟨 - Letter is present in the word but at a different position.")
+    print("     🟩 - Letter is present in the word and at the correct position.")
+    print("     🟥 - Letter is not present in the word.")
     print("E. You can only guess a 5-letter word.")
     print("F. You can only guess a word once.")
-    print("----------------------------------------------")
+    print("---------------------------------------------------------------------")
+
 
 def words_picking(allow_words):
     return random.choice(allow_words)
