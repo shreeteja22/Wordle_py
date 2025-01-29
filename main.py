@@ -2,6 +2,7 @@ import random
 
 def rules():
     print("\n")
+    print("----------------------------------------------")
     print("The rules are simple: ")
     print("A. You have to guess a 5-letter word.")
     print("B. You have 6 chances to guess the word.")
@@ -12,7 +13,7 @@ def rules():
     print("🟥 - Letter is not present in the word.")
     print("E. You can only guess a 5-letter word.")
     print("F. You can only guess a word once.")
-    print("\n")
+    print("----------------------------------------------")
 
 def words_picking(allow_words):
     return random.choice(allow_words)
@@ -81,7 +82,9 @@ def main():
                     print("----------------------------------------------")
                     break
             else:
+                print("----------------------------------------------")
                 print(f"\nSorry! The Correct Word Was {target_word}.\n")
+                print("----------------------------------------------")
 
             play_again = input("Do you want to play again? (y/n): ").lower()
             if play_again != 'y':
